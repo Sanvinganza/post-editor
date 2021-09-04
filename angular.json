@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-nginx-docker": {
+    "post-editor": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-nginx-docker",
+            "outputPath": "dist/post-editor",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -93,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-nginx-docker:build:production"
+              "browserTarget": "post-editor:build:production"
             },
             "development": {
-              "browserTarget": "angular-nginx-docker:build:development"
+              "browserTarget": "post-editor:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,11 +104,11 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-nginx-docker:build"
+            "browserTarget": "post-editor:build"
           }
         }
       }
     }
   },
-  "defaultProject": "angular-nginx-docker"
+  "defaultProject": "post-editor"
 }
