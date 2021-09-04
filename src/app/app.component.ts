@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
   `,
   styles: []
 })
+
 export class AppComponent {
   title = 'post-editor';
 }
